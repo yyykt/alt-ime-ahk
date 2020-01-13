@@ -126,3 +126,16 @@ RAlt up::
         IME_SET(1)
     }
     Return
+
+
+; 左 Ctrl 空打ちで ESC
+~LCtrl::
+    Return
+
+~LCtrl up::
+    ; MsgBox, % A_PriorHotkey
+    if (A_PriorHotkey == "~LCtrl")
+    {
+        Send, {ESC}
+    }
+    Return
