@@ -137,5 +137,6 @@ RAlt up::
     if (A_PriorHotkey == "~LCtrl")
     {
         Send, {ESC}
+        IME_SET(0)
     }
     Return
